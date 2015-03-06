@@ -1,3 +1,29 @@
+### New Comments Written by me (The Student)
+
+This README.md file contains the instructions for a programming assignment.
+The assignment is saved in the program file CacheMatrix.R
+
+There are 3 variables in the code: m, x and y.
+x is defined as a matrix, but it really more of an object in which one part
+is an input matrix. x also stores program specific information used to 
+determine if a new matrix is defined or if a matrix is being recalled. 
+y is used to define x, as a matrix cannot be defined as empty. Otherwise
+y is not used again.
+m is used to store the inverse of x. 
+
+The syntax used to run the program is as follows: a matrix is first defined
+within makeCacheMatrix, for example:
+
+V <- makeCacheMatrix(matrix(c(0,5,2,2,1,9,8,1,4), nrow=3, ncol=3))
+
+To create the inverse run cacheSolve on the object created, for example:
+
+cacheSolve(V)
+
+The function cacheSolve will either calculate and store an inverse or
+fetch an inverse from its cache. 
+
+
 ### Introduction
 
 This second programming assignment will require you to write an R
